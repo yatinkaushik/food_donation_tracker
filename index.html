@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Donor Section -->
+  <div class="donor-section">
+    <h3>Donor Section</h3>
+    <div class="form-group">
+      <label for="donor-name">Donor Name</label>
+      <input type="text" id="donor-name" placeholder="Enter your name" />
+    </div>
+    <div class="form-group">
+      <label for="food-item">Food Item</label>
+      <input type="text" id="food-item" placeholder="Enter food item" />
+    </div>
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" placeholder="Enter quantity" />
+    </div>
+    <div class="form-group">
+      <label for="expiry-date">Expiry Date</label>
+      <input type="date" id="expiry-date" />
+    </div>
+    <button id="add-donation-button">Add Donation</button>
+  </div>
+
+  <!-- Claimer Section -->
+  <div class="claimer-section">
+    <h3>Claimer Section</h3>
+    <div class="form-group">
+      <label for="claimer-name">Claimer Name</label>
+      <input type="text" id="claimer-name" placeholder="Enter your name" />
+    </div>
+    <div class="form-group">
+      <label for="claimer-contact">Claimer Contact</label>
+      <input type="text" id="claimer-contact" placeholder="Enter your contact number" />
+    </div>
+    <button id="claim-button">Claim Donation</button>
+  </div>
+
+  <!-- Pending Donations Section -->
+  <div class="donations-section" id="pending-donations">
+    <h3>Pending Donations</h3>
+    <ul id="pending-list"></ul>
+    <!--<button id="claim">Claim Donation</button>-->
+  </div>
+
+  <!-- Claimed Donations Section -->
+  <div class="donations-section" id="claimed-donations">
+    <h3>Claimed Donations</h3>
+    <ul id="claimed-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
